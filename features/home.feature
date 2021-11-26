@@ -1,11 +1,11 @@
 Feature: The internet website HomePage
 
- Scenario Outline: As a user i can open the internet website
- 
- Given  I open the browser and load the <HomeUrl>
- Then  I should see the header with the <HeaderText>
+    Scenario Outline: As a user i can open the internet website
 
- Examples: 
-     |HomeUrl                             |HeaderText
-     |https://the-internet.herokuapp.com/ |welcome to the-internet
+        Given I open the browser and load the <HomeUrl>
+        Then I should see the header with the <HeaderText>
+
+        Examples:
+            | HomeUrl                             | HeaderText              |
+            | https://the-internet.herokuapp.com/ | Welcome to the-internet |
 
